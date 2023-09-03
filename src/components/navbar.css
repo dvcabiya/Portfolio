@@ -1,11 +1,26 @@
 .navbar{
   display: flex;
-  height: 5vh;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   background: white;
   position: fixed; 
   top: 0; 
+  transition: 0.35s linear;
+  height: fit-content;
+  line-height: 2vh;
+  min-height: 4vh;
+  width: 100%; 
+  padding: 1vw;
+}
+.hidden{
+  height: fit-content;
+  min-height: 4vh;
   width: 100vw; 
+  position: fixed;
+  top: -11vh;
+  transition: 0.35s linear;
 }
 button{
   color: black;
@@ -14,7 +29,8 @@ button{
   box-shadow: none;
   font-size: 2vh;
   font-family: 'Dela Gothic One', cursive; 
-  padding: 10px;
-  margin: 5px;
   text-align: center;
+  margin-left: 1vw;
+  margin-right: 1vw;
+
 }

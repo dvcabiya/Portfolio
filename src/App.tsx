@@ -1,5 +1,6 @@
 import Navbar from "./components/navbar";
-import "./App.css"
+import Content from "./components/content"
+import { Route, Routes } from "react-router-dom";
 
 function App() {
 
@@ -8,10 +9,11 @@ function App() {
       <div>
         <Navbar/>
       </div>
-      <div className="firstBlock"/>
-      <div className="secondBlock"/>
-      <div className="thirdBlock"/>
-      <div className="fourthBlock"/>
+      <Routes>
+        <Route path="/" element={<Content/>} />
+      </Routes>
+
+      
     </>
   )
 }
