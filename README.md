@@ -15,3 +15,6 @@
   - CSS
 #### Hosting
   - Amazon Web Services
+
+### About:
+This site is meant to be a concise overview of who I am, what I do, and my projects. If a web-based project isn't important enough to have it's own domain, it'll probably be hosted here. At present, I am in college and hosting websites costs money, so the quality and size of this site will hopefully only increase over time.
