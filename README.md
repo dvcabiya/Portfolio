@@ -3,9 +3,10 @@
 
 ### Tech Used:
 For the actual portfolio section:
-  - Javascript
+  - Typescript
     - React
   - CSS
+
 For the projects:
   - Javascript
     - React
@@ -13,5 +14,6 @@ For the projects:
     - Express
   - MongoDB
   - CSS
+
 For hosting:
   - Amazon Web Services
