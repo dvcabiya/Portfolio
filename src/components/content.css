@@ -2,13 +2,92 @@ body{
   margin: 0;
   overflow-x: hidden;
 }
-.topBlock{
+.introBlock{
   display: flex;
   align-items: center;
   width: 100%;
   height: 90vh;
   min-height: fit-content;
   background-color: #6b3e7d;
+}
+.skillsBlock{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 100vw;
+  height: fit-content;
+  background-color: #8D5EA0;
+}
+.contactBlock{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  max-width: 100vw;
+  height: 70vh;
+  background-color: #D6A2E9;
+}
+.contactBlock--container{
+  margin-top: 2vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 50vw;
+  min-width: fit-content;
+  align-self: center;
+}
+.projectBlock{
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 50vh;
+  min-height: fit-content;
+  background-color: #B17FC3;
+}
+.project--container{
+  display: flex;
+  justify-content: center;
+  width: 80vw;
+  min-width: fit-content;
+}
+.projectImg{
+  width: 350px;
+  height: 230px;
+  border: 11px #472952 solid;
+  border-radius: 17%;
+}
+.contactLinkText{
+  font-family: 'Dela Gothic One', cursive; 
+  color: #6b4b8a;
+  font-size: 6vh;
+  background-color: white;
+  padding: 1.3vw;
+  max-width: fit-content;
+}
+.rightAlign{
+  align-self: flex-end
+}
+.gradient1{
+  background-image: linear-gradient(#6b3e7d ,#8D5EA0);
+  height: 25vh;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+}
+.gradient2{
+  background-image: linear-gradient(#8D5EA0,#B17FC3);
+  height: 25vh;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+}
+.gradient3{
+  background-image: linear-gradient(#B17FC3,#D6A2E9);
+  height: 25vh;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
 }
 .headText{
   max-width: 1200px;
@@ -24,21 +103,15 @@ body{
 .headText em{
   color: white;
 }
-.gradient1{
-  background-image: linear-gradient(#6b3e7d ,#8D5EA0);
-  height: 25vh;
-  z-index: -1;
-  display: flex;
-  justify-content: center;
-}
-.gradient1 h1{
+.sectionHeader{
   max-width: 400px;
-  margin-top: 8vh;
   font-family: 'Dela Gothic One', cursive; 
   font-style: italic;
   color: white;
   font-size: 8vh;
-  justify-self: center;
+}
+.sectionHeader--higher{
+  margin-top: 5vh;
 }
 .java{
   font-size: larger;
@@ -46,37 +119,19 @@ body{
 .exp{
   font-size: 90%;
 }
-.secondBlock{
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 100vw;
-  height: 85vh;
-  min-height: fit-content;
-  background-color: #8D5EA0;
-}
 .skillSubheader{
   margin-top: -2vh;
-  color:  #ffffff;
+  color:  #e9d4ff;
   font-size: 5vh;
 }
 .skillText{
-  max-width: 1200px;
   margin-top: -1vh;
-  margin-left: 6vw;
+  padding: 3vw;
   line-height: 110%;
   font-family: 'Dela Gothic One', cursive; 
-  color: #eeddff;
+  color: #d5abff;
   font-size: 4vh;
 }
-.skillText--first{
-  margin-left: 0;
-}
-.skillText--last{
-  margin-top: -1vh;
-}
-
 .skillText i{
   color: white;
 }
@@ -91,5 +146,12 @@ body{
   }
 
 }
+@media (max-width:360px) {
+  .projectImg{
+    width: 258px;
+    height: 170px;
+}
+}
+
 
 
