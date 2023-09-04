@@ -1,5 +1,8 @@
 import "./content.css"
 import grips from "./../assets/grips.png"
+import runner from "./../assets/runner.png"
+
+
 export default function Content() {
 
   return(
@@ -12,27 +15,36 @@ export default function Content() {
       <div className="skillsBlock">
         <ul className="skillText skillText--first">
           <h3 className="skillSubheader">Languages:</h3>
-          <li>Python <i className="devicon-python-plain colored "/></li> 
-          <li>Java <i className="devicon-java-plain java colored"/></li>
-          <li>Javascript <i className="devicon-javascript-plain colored"/></li>
+          <li>Python <i className="devicon-python-plain "/></li> 
+          <li>Java <i className="devicon-java-plain java "/></li>
+          <li>Javascript <i className="devicon-javascript-plain "/></li>
         </ul>
         <ul className="skillText">
           <h3 className="skillSubheader">Frameworks:</h3>
-          <li>React <i className="devicon-react-original colored"/></li> 
-          <li>Node <i className="devicon-nodejs-plain colored"/></li>
+          <li>React <i className="devicon-react-original "/></li> 
+          <li>Node <i className="devicon-nodejs-plain "/></li>
           <li>Express <i className="devicon-express-original exp"/></li>
         </ul>
         <ul className="skillText skillText--last">
           <h3 className="skillSubheader">Other:</h3>
-          <li>Git <i className="devicon-git-plain colored"/></li> 
-          <li>MongoDB <i className="devicon-mongodb-plain colored"/></li>
-          <li>HTML/CSS <i className="devicon-html5-plain colored"/><i className="devicon-css3-plain colored"/></li>
+          <li>Git <i className="devicon-git-plain "/></li> 
+          <li>MongoDB <i className="devicon-mongodb-plain "/></li>
+          <li>HTML/CSS <i className="devicon-html5-plain "/><i className="devicon-css3-plain "/></li>
         </ul>
       </div>
       <div className="gradient2"><h1 className="sectionHeader">Projects</h1></div>
       <div className="projectBlock">
-        <div className="project--container">
-          <img className="projectImg" src={grips}></img>
+        <div className="projectsContainer">
+          <div className="projectBox">
+            <img className="projectImg" src={grips}></img>
+            <h4 className="projectTitleHeader">Is Death Grips Online?</h4>
+            <span className="projectBody">A website to instantly check the status of Sacramento hip-hop group Death Grips. (Github)</span>
+          </div>
+          <div className="projectBox">
+            <img className="projectImg" src={runner}></img>
+            <h4 className="projectTitleHeader">Aversion - Endless Runner</h4>
+            <span className="projectBody">A classic 2D runner game, coded originally in Java, ported to a Python web app. (Github)</span>
+          </div>
         </div>
       </div>
       <div className="gradient3"><h1 className="sectionHeader sectionHeader--higher">Contact</h1></div>

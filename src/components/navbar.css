@@ -13,6 +13,7 @@
   min-height: 4vh;
   width: 100%; 
   padding: 1vw;
+  z-index: 40;
 }
 .hidden{
   height: fit-content;

@@ -33,7 +33,7 @@ body{
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  width: 50vw;
+  width: 60vw;
   min-width: fit-content;
   align-self: center;
 }
@@ -41,29 +41,60 @@ body{
   display: flex;
   justify-content: center;
   width: 100vw;
-  height: 50vh;
-  min-height: fit-content;
+  height: fit-content;
   background-color: #B17FC3;
 }
-.project--container{
+.projectsContainer{
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   width: 80vw;
   min-width: fit-content;
+  height: fit-content;
+  z-index: 1;
+}
+.projectBox{
+  padding: 15px;
+  width: 390px;
+  height: fit-content;
 }
 .projectImg{
   width: 350px;
   height: 230px;
-  border: 11px #472952 solid;
-  border-radius: 17%;
+  border: 11px #623572 solid;
+  border-radius: 30px;
+}
+.projectTitleHeader{
+  position: relative;
+  margin-top: 0;
+  font-family: 'Dela Gothic One', cursive; 
+  color:  #623572;
+  font-size: 26px;
+}
+.projectBody{
+  position: relative;
+  top: -24px;
+  font-family: 'Dela Gothic One', cursive; 
+  color:  #f5d8ff;
+  font-size: 20px;
 }
 .contactLinkText{
   font-family: 'Dela Gothic One', cursive; 
-  color: #6b4b8a;
-  font-size: 6vh;
+  color: #3d2b50;
+  font-size: 8vh;
   background-color: white;
-  padding: 1.3vw;
-  max-width: fit-content;
+  padding: 1.7vh;
+  margin-top: 0;
+  width: fit-content;
+  z-index: 2;
+  height: auto;
+  transition: background-color 1s, border-radius 1s, color 1s;
+}
+.contactLinkText:hover{
+  background-color: #3d2b50;  
+  color: #fff;
+  border-radius: 30px;
+  transition: background-color 1s,border-radius 1s, color 1s;
 }
 .rightAlign{
   align-self: flex-end
@@ -90,7 +121,7 @@ body{
   justify-content: center;
 }
 .headText{
-  max-width: 1200px;
+  max-width: 900px;
   margin-top: 4vh;
   margin-left: 4vw;
   font-family: 'Dela Gothic One', cursive; 
@@ -118,6 +149,8 @@ body{
 }
 .exp{
   font-size: 90%;
+  bottom: -.5vh;;
+  position: relative
 }
 .skillSubheader{
   margin-top: -2vh;
@@ -146,12 +179,34 @@ body{
   }
 
 }
-@media (max-width:360px) {
+@media (max-width:400px) {
   .projectImg{
-    width: 258px;
+    width: 230px;
     height: 170px;
 }
+.projectBox{
+  width: 240px;
 }
+}
+@keyframes in {
+  from{
+    transform: translateX(1) translateY(1);
+  }
+  to{
+    transform: translateX(2) translateY(3);
+  }
+  
+}
+
+@keyframes out {
+  from{
+    transform: translateX(2) translateY(2);
+  }
+  to{
+    transform: translateX(1) translateY(1);
+  }
+}
+
 
 
 
