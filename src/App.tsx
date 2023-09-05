@@ -1,6 +1,6 @@
 import Navbar from "./components/navbar";
 import Content from "./components/content"
-import { Route, Routes } from "react-router-dom";
+import { Link, Route, Routes, NavLink } from "react-router-dom";
 
 function App() {
 
@@ -11,6 +11,7 @@ function App() {
       </div>
       <Routes>
         <Route path="/" element={<Content/>} />
+        <Route path="*" element={<Content/>} /> 
       </Routes>
 
       

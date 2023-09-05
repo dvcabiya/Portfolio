@@ -33,7 +33,7 @@ body{
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  width: 60vw;
+  width: 50vw;
   min-width: fit-content;
   align-self: center;
 }
@@ -81,7 +81,7 @@ body{
 .contactLinkText{
   font-family: 'Dela Gothic One', cursive; 
   color: #3d2b50;
-  font-size: 8vh;
+  font-size: 6vh;
   background-color: white;
   padding: 1.7vh;
   margin-top: 0;
@@ -96,7 +96,12 @@ body{
   border-radius: 30px;
   transition: background-color 1s,border-radius 1s, color 1s;
 }
-.rightAlign{
+.contactLinkText--linkedin{
+ align-self: center; 
+ left: -5vw;
+ position: relative;
+}
+.contactLinkText--email{
   align-self: flex-end
 }
 .gradient1{
@@ -121,7 +126,8 @@ body{
   justify-content: center;
 }
 .headText{
-  max-width: 900px;
+  max-width: 80vw;
+  padding: 20px;
   margin-top: 4vh;
   margin-left: 4vw;
   font-family: 'Dela Gothic One', cursive; 
@@ -139,7 +145,7 @@ body{
   font-family: 'Dela Gothic One', cursive; 
   font-style: italic;
   color: white;
-  font-size: 8vh;
+  font-size: 9vh;
 }
 .sectionHeader--higher{
   margin-top: 5vh;
@@ -159,6 +165,7 @@ body{
 }
 .skillText{
   margin-top: -1vh;
+  max-width: 80vw;
   padding: 3vw;
   line-height: 110%;
   font-family: 'Dela Gothic One', cursive; 
@@ -180,6 +187,9 @@ body{
 
 }
 @media (max-width:400px) {
+  .sectionHeader{
+    font-size: 6vh;
+  }
   .projectImg{
     width: 230px;
     height: 170px;
@@ -197,7 +207,6 @@ body{
   }
   
 }
-
 @keyframes out {
   from{
     transform: translateX(2) translateY(2);

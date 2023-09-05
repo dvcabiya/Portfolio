@@ -34,13 +34,40 @@ export default function Navbar() {
             behavior: "smooth",
           });
       };
-      const toSkills = () => {
+      function toSkills() {
+        let section = document.getElementById("#skills")
+        let bodyRect = document.body.getBoundingClientRect()
+        if (!section) return;
+        let goTo = bodyRect.top - section.getBoundingClientRect().top
+        goTo = Math.abs(goTo)- 50;
         window.scrollTo({
-            top: window.innerHeight*.74,
+            top: goTo,
             behavior: "smooth",
-        });
-      console.log(window.innerHeight)
+          });
       };
+      function toProjects() {
+        let section = document.getElementById("#projects")
+        let bodyRect = document.body.getBoundingClientRect()
+        if (!section) return;
+        let goTo = bodyRect.top - section.getBoundingClientRect().top
+        goTo = Math.abs(goTo)- 50;
+        window.scrollTo({
+            top: goTo,
+            behavior: "smooth",
+          });
+      };
+      function toContact() {
+        let section = document.getElementById("#contact")
+        let bodyRect = document.body.getBoundingClientRect()
+        if (!section) return;
+        let goTo = bodyRect.top - section.getBoundingClientRect().top
+        goTo = Math.abs(goTo)- 50;
+        window.scrollTo({
+            top: goTo,
+            behavior: "smooth",
+          });
+      };
+      
       const starWalk = () => {
         if (graffBig.paused) {
           graffBig.play();
@@ -56,8 +83,10 @@ export default function Navbar() {
     <div className={`navbar ${show && 'hidden'}`}>
       <button onClick={toTop}>Home</button>
       <button onClick={toSkills}>Skills</button>
-      <button onClick={toTop}>Contact</button>
-      <button onClick={starWalk}>About</button>
+      <button onClick={toProjects}>Projects</button>
+      <button onClick={toContact}>Contact</button>
+      <button onClick={toContact}>About</button>
+
 
     </div>
     </>
