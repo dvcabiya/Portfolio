@@ -8,7 +8,7 @@ body{
   width: 100%;
   height: 90vh;
   min-height: fit-content;
-  background-color: #6b3e7d;
+  background-color: #6b3e7d
 }
 .skillsBlock{
   display: flex;
@@ -25,7 +25,7 @@ body{
   align-items: flex-start;
   flex-wrap: wrap;
   max-width: 100vw;
-  height: 70vh;
+  height: fit-content;
   background-color: #D6A2E9;
 }
 .contactBlock--container{
@@ -43,6 +43,13 @@ body{
   width: 100vw;
   height: fit-content;
   background-color: #B17FC3;
+}
+.aboutBlock{
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 60vh;
+  background-color: #FCC7FF;
 }
 .projectsContainer{
   display: flex;
@@ -120,6 +127,13 @@ body{
 }
 .gradient3{
   background-image: linear-gradient(#B17FC3,#D6A2E9);
+  height: 25vh;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+}
+.gradient4{
+  background-image: linear-gradient(#D6A2E9, #FCC7FF);
   height: 25vh;
   z-index: -1;
   display: flex;

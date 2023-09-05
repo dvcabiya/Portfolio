@@ -61,6 +61,8 @@ export default function Content() {
             <h1 className="contactLinkText contactLinkText--linkedin">LinkedIn</h1>
         </div>
       </div>
+      <div className="gradient4"><h1 id="#about"className="sectionHeader">About</h1></div>
+      <div className="aboutBlock"></div>
     </>
   ) 
 }
