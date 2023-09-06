@@ -6,12 +6,7 @@ import myself from "./../assets/myself.png"
 
 
 export default function Content() {
-  function faceAnimation(){
-    setTimeout(() => {
 
-    }, 750);
-
-  }
   return(
     <>
       <div className="introBlock">
