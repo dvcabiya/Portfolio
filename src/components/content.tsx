@@ -1,6 +1,7 @@
 import "./content.css"
 import grips from "./../assets/grips.png"
 import runner from "./../assets/runner.png"
+import myself from "./../assets/myself.png"
 
 
 
@@ -56,13 +57,22 @@ export default function Content() {
       <div className="gradient3"><h1 className="sectionHeader sectionHeader--higher" id="#contact">Contact</h1></div>
       <div className="contactBlock">
         <div className="contactBlock--container">
-            <h1 className="contactLinkText" >Github</h1>
-            <h1 className="contactLinkText contactLinkText--email">Email</h1>
-            <h1 className="contactLinkText contactLinkText--linkedin">LinkedIn</h1>
+            <a className="contactLinkText" href="https://github.com/vcabiya" >Github</a>
+            <a className="contactLinkText contactLinkText--email" href="mailto:dvcabiya@gmail.com">Email</a>
+            <a className="contactLinkText contactLinkText--linkedin" href="https://www.linkedin.com/in/diegovcabiya/">LinkedIn</a>
         </div>
       </div>
       <div className="gradient4"><h1 id="#about"className="sectionHeader">About</h1></div>
-      <div className="aboutBlock"></div>
+      <div className="aboutBlock">
+        <div className="aboutCont">
+          <img src={myself} alt="Diego Cabiya Looking Strange In A Mirror" className="aboutImg" />
+          <h3 className="aboutText">I'm Diego, and I like very little more than CS. Ever since I first engaged with coding, I realized it was
+            the only field I could practically see myself making a career in, and ever since I have frantically worked to be the best at it I can.
+            I'm looking to do the most I can in college to set myself up to be as successful as possible, so expect this site to be updated frequently.
+          </h3>
+        </div>
+      </div>
+      <div className="footer">🇵🇷</div>
     </>
   ) 
 }

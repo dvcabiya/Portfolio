@@ -34,30 +34,8 @@ export default function Navbar() {
             behavior: "smooth",
           });
       };
-      function toSkills() {
-        let section = document.getElementById("#skills")
-        let bodyRect = document.body.getBoundingClientRect()
-        if (!section) return;
-        let goTo = bodyRect.top - section.getBoundingClientRect().top
-        goTo = Math.abs(goTo)- 50;
-        window.scrollTo({
-            top: goTo,
-            behavior: "smooth",
-          });
-      };
-      function toProjects() {
-        let section = document.getElementById("#projects")
-        let bodyRect = document.body.getBoundingClientRect()
-        if (!section) return;
-        let goTo = bodyRect.top - section.getBoundingClientRect().top
-        goTo = Math.abs(goTo)- 50;
-        window.scrollTo({
-            top: goTo,
-            behavior: "smooth",
-          });
-      };
-      function toContact() {
-        let section = document.getElementById("#contact")
+      function toSection(title: string) {
+        let section = document.getElementById(`#${title}`)
         let bodyRect = document.body.getBoundingClientRect()
         if (!section) return;
         let goTo = bodyRect.top - section.getBoundingClientRect().top
@@ -82,10 +60,10 @@ export default function Navbar() {
     <>
     <div className={`navbar ${show && 'hidden'}`}>
       <button onClick={toTop}>Home</button>
-      <button onClick={toSkills}>Skills</button>
-      <button onClick={toProjects}>Projects</button>
-      <button onClick={toContact}>Contact</button>
-      <button onClick={toContact}>About</button>
+      <button onClick={() => toSection("skills")}>Skills</button>
+      <button onClick={() => toSection("projects")}>Projects</button>
+      <button onClick={() => toSection("contact")}>Contact</button>
+      <button onClick={() => toSection("about")}>About</button>
 
 
     </div>

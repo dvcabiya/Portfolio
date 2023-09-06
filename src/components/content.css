@@ -48,8 +48,13 @@ body{
   display: flex;
   justify-content: center;
   width: 100vw;
-  height: 60vh;
+  height: fit-content;
   background-color: #FCC7FF;
+}
+.aboutCont{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .projectsContainer{
   display: flex;
@@ -189,6 +194,30 @@ body{
 .skillText i{
   color: white;
 }
+.aboutImg{
+  height: 40vh;
+  aspect-ratio: 3/4;
+  max-width: 80vw;
+  border: 11px #623572 solid;
+  border-radius: 30px;
+}
+.aboutText{
+  font-size: 16px;
+  font-family: 'Dela Gothic One', cursive; 
+  line-height: 30px;
+  color:#623572;
+  padding: 20px;
+  width: 380px;
+  margin-top: -8px;
+  margin-bottom: 90px;
+}
+.footer{
+width: 100vw;
+background-color:#512762; 
+height: 40px;
+text-align: center;
+font-size: 30px;
+}
 
 @media (max-width:815px) {
   .headText {
@@ -208,8 +237,16 @@ body{
     width: 230px;
     height: 170px;
 }
+.aboutText{
+  width: 270px;
+  padding: 0;
+  margin-top: 0;
+}
 .projectBox{
   width: 240px;
+}
+.skillSubheader{
+  font-size: 4vh;
 }
 }
 @keyframes in {
