@@ -46,6 +46,13 @@ export default function Navbar() {
           });
       };
       
+      const starWalk = () => {
+        if (graffBig.paused) {
+          graffBig.play();
+        } else {
+          graffBig.currentTime = 0
+        } 
+      }
 
       
       
