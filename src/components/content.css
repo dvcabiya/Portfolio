@@ -1,0 +1,283 @@
+body{
+  margin: 0;
+  overflow-x: hidden;
+  background-color: #6b3e7d;
+}
+.introBlock{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 90vh;
+  min-height: fit-content;
+  background-color: #6b3e7d
+}
+.skillsBlock{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 100vw;
+  height: fit-content;
+  background-color: #8D5EA0;
+}
+.contactBlock{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  max-width: 100vw;
+  height: fit-content;
+  background-color: #D6A2E9;
+}
+.contactBlock--container{
+  margin-top: 2vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 50vw;
+  min-width: fit-content;
+  align-self: center;
+}
+.projectBlock{
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: fit-content;
+  background-color: #B17FC3;
+}
+.aboutBlock{
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: fit-content;
+  background-color: #FCC7FF;
+}
+.aboutCont{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.projectsContainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 80vw;
+  min-width: fit-content;
+  height: fit-content;
+  z-index: 1;
+}
+.projectBox{
+  padding: 15px;
+  width: 390px;
+  height: fit-content;
+}
+.projectImg{
+  width: 350px;
+  height: 230px;
+  border: 11px #623572 solid;
+  border-radius: 30px;
+}
+.projectTitleHeader{
+  position: relative;
+  margin-top: 0;
+  font-family: 'Dela Gothic One', cursive; 
+  color:  #623572;
+  font-size: 26px;
+}
+.projectBody{
+  position: relative;
+  top: -24px;
+  font-family: 'Dela Gothic One', cursive; 
+  color:  #f5d8ff;
+  font-size: 20px;
+}
+.projectBody a{
+  font-family: 'Dela Gothic One', cursive; 
+  font-size: 20px;
+  color: #623572;
+}
+.projectBody a:hover{
+  font-family: 'Dela Gothic One', cursive; 
+  font-size: 20px;
+  color: #7c54a1;
+}
+.contactLinkText{
+  font-family: 'Dela Gothic One', cursive; 
+  color: #3d2b50;
+  font-size: 6vh;
+  background-color: white;
+  padding: 1.7vh;
+  margin-top: 20px;
+  width: fit-content;
+  z-index: 2;
+  height: auto;
+  transition: background-color 1s, border-radius 1s, color 1s;
+}
+.contactLinkText:hover{
+  background-color: #3d2b50;  
+  color: #fff;
+  border-radius: 30px;
+  transition: background-color 1s,border-radius 1s, color 1s;
+}
+.contactLinkText--linkedin{
+ align-self: center; 
+ left: -5vw;
+ position: relative;
+}
+.contactLinkText--email{
+  align-self: flex-end
+}
+.gradient1{
+  background-image: linear-gradient(#6b3e7d ,#8D5EA0);
+  height: 25vh;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+}
+.gradient2{
+  background-image: linear-gradient(#8D5EA0,#B17FC3);
+  height: 25vh;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+}
+.gradient3{
+  background-image: linear-gradient(#B17FC3,#D6A2E9);
+  height: 25vh;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+}
+.gradient4{
+  background-image: linear-gradient(#D6A2E9, #FCC7FF);
+  height: 25vh;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+}
+.headText{
+  max-width: 80vw;
+  padding: 20px;
+  margin-top: 4vh;
+  margin-left: 4vw;
+  font-family: 'Dela Gothic One', cursive; 
+  color: #e3cbff;
+  font-size: 5vh;
+}
+.headText span{
+  color: white;
+}
+.headText em{
+  color: white;
+}
+.sectionHeader{
+  max-width: 400px;
+  font-family: 'Dela Gothic One', cursive; 
+  font-style: italic;
+  color: white;
+  font-size: 9vh;
+}
+.sectionHeader--higher{
+  margin-top: 5vh;
+}
+.java{
+  font-size: larger;
+}
+.exp{
+  font-size: 90%;
+  bottom: -.5vh;;
+  position: relative
+}
+.skillSubheader{
+  margin-top: -2vh;
+  color:  #e9d4ff;
+  font-size: 5vh;
+}
+.skillText{
+  margin-top: -1vh;
+  max-width: 80vw;
+  padding: 3vw;
+  line-height: 110%;
+  font-family: 'Dela Gothic One', cursive; 
+  color: #d5abff;
+  font-size: 4vh;
+}
+.skillText i{
+  color: white;
+}
+.aboutImg{
+  height: 40vh;
+  aspect-ratio: 3/4;
+  max-width: 80vw;
+  border: 11px #623572 solid;
+  border-radius: 30px;
+}
+.aboutText{
+  font-size: 16px;
+  font-family: 'Dela Gothic One', cursive; 
+  line-height: 30px;
+  color:#623572;
+  padding: 20px;
+  width: 380px;
+  margin-top: -8px;
+  margin-bottom: 90px;
+}
+.footer{
+width: 100vw;
+background-color:#6b3e7d; 
+height: 40px;
+text-align: center;
+font-size: 30px;
+}
+
+@media (max-width:815px) {
+  .headText {
+    font-size: 4vh;
+    margin-top: 9vh;
+  }
+  .topBlock{
+    align-items: flex-start;
+  }
+
+}
+@media (max-width:400px) {
+  .sectionHeader{
+    font-size: 6vh;
+  }
+  .projectImg{
+    width: 230px;
+    height: 170px;
+}
+.aboutText{
+  width: 270px;
+  padding: 0;
+  margin-top: 0;
+}
+.projectBox{
+  width: 240px;
+}
+.skillSubheader{
+  font-size: 4vh;
+}
+}
+@keyframes in {
+  from{
+    transform: translateX(1) translateY(1);
+  }
+  to{
+    transform: translateX(2) translateY(3);
+  }
+  
+}
+@keyframes out {
+  from{
+    transform: translateX(2) translateY(2);
+  }
+  to{
+    transform: translateX(1) translateY(1);
+  }
+}
+
+
+
+
